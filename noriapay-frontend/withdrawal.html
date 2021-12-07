@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Withdrawal Request</title>
+        <style>
+            body{margin: 0;padding: 0;height: 100%;font-family: Poppins;background-color: #001b50;}
+            .container-wrap{width: 100%;height:100%;display: block;background-image: url(img/MaskGroup.png);  background-position: right;background-repeat: no-repeat;background-size: auto;background-color: #001b50;}
+            .inside-container{
+                width: 40%;
+                flex-grow: 0;
+                margin: 0 auto;
+                padding: 30px;
+                border-radius: 15px;
+                background-color: #fff;
+                position: relative;
+                top: 12%;
+            }
+            .clear{clear: both;}
+            .title{color: #002959;font-weight: 600;font-size: 20px;margin: 0;width: 59%;float: left;}
+            .merchlogo{width: 30%;height: 33px; border: 1px solid darkgrey; float: right;}
+            .form-wrap{padding-top: 30px;}
+            .form-group{display: flex;width: 100%;}
+            .form-set{width: 50%;}.full{width: 100%;}
+            .right{text-align: right;}
+            .label{color: rgba(0, 0, 0, 0.5);line-height: 1.12;font-size: 13px;}
+            .field{margin-top: 5px; width: 95%; height: 50px; border: 1px solid #e4e4e4; font-weight: bold; background-color: #f8fcff; border-radius: 4px;padding: 18px;}
+            .button{font-family: Poppins;width:100%; height: 50px; border: none; border-radius: 5px;background-image: linear-gradient(to right, #f2711d -47%, #f3ac1b 75%);padding: 12px;color: #fff;font-size: 20px;}
+            .footer{margin-top: 10%;text-align: center;padding-bottom: 8%;}
+            .poweredby{margin: 0;color:#fff;}
+        </style>
+    </head>
+    <body>
+        <div class="container-wrap">
+            <div class=inside-container>
+                <h3 class="title">Make a Withdrawal Request</h3>
+                <img alt="Merchant Logo" src="" class="merchlogo" />
+                <div class="clear"></div>
+                <div class="form-wrap">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <div class="form-set">
+                                <label for="platform" class="label">Platform</label><br>
+                                <select id="platform" name="platform" class="field">
+                                    <option value="MT4">MT4</option>
+                                </select>
+                            </div>
+                            <div class="form-set right">
+                                <label for="account" class="label">Trading Account</label><br>
+                                <input type="text" name="account" id="account" class="field" />
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <div class="form-set">
+                                <label for="name" class="label">Name</label><br>
+                                <input type="text" name="name" id="name" class="field" />
+                            </div>
+                            <div class="form-set right">
+                                <label for="email" class="label">Email</label><br>
+                                <input type="text" name="email" id="email" class="field" />
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <div class="form-set full">
+                                <label for="amount" class="label">Withdrawal Amount in USD</label><br>
+                                <input type="text" name="amount" id="amount" class="field" style="width:100% !important;" />
+                            </div>
+                        </div>
+                        <br><br>
+                        <button id="next" class="button">NEXT <img src="img/Arrow1.png" /></button>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <h6 class="poweredby">POWERED BY</h6>
+                <img src="img/np-white.png" alt="NoriaPay" width="10%" />
+            </footer>
+        </div>
+    </body>
+</html>

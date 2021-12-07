@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Transaction Details</title>
+        <style>
+            body{margin: 0;padding: 0;height: 100%;font-family: Poppins;background-color: #001b50;}
+            h2,h3,h5{margin: 0;}
+            .container-wrap{width: 100%;height:100%;display: block;background-image: url(img/MaskGroup.png);  background-position: right;background-repeat: no-repeat;background-size: auto;background-color: #001b50;}
+            .inside-container{
+                width: 43%;
+                margin: 0 auto;
+                padding: 30px;
+                border-radius: 15px;
+                background-color: #fff;
+                position: relative;
+                top: 12%;
+            }
+            .clear{clear: both;}
+            .title{color: #002959;font-weight: 600;font-size: 20px;margin: 0;width: 59%;float: left;}
+            .merchlogo{width: 30%;height: 33px; border: 1px solid darkgrey; float: right;}
+            .form-wrap{padding-top: 30px;}
+            .block-group{border: 1px solid #e4e4e4;background-color: #f8fcff;border-radius: 4px;padding: 15px;display: flex;}
+            .block{display: inline-block;width: 95%;}
+            .block-step{width: 10%;display: flex;margin-top: 10px;}
+            .blockhead p{font-size: 11px; padding: 0;margin: 0;}.blockhead{margin-top: 10px;border-left: 1px solid #e4e4e4; padding-left: 10px;;}
+            .blockbody{padding-left: 10px;}
+            .blockfile{border: 1px dashed #3ca1ed;padding: 10px;text-align: center;border-radius: 4px;}
+            .blockfile p{font-size: 11px;}
+            .copy{position:relative;top: 5px; padding-left: 5px;}
+            .amt{border-bottom: 1px solid #e4e4e4; width: fit-content;font-size: 14px;margin: 0;padding-bottom: 10px;}
+            .label{color: rgba(0, 0, 0, 0.5);font-size: 12px;width: 40%;text-align: left;}
+            .data{font-size: 14px;width:20%; color: #111;}
+            .details{width: 100%; display: flex;padding: 6px 0;}.details img{padding-left: 20%;}
+            .deposit{display: flex;margin-top: 20px;}
+            .right{width:30%; text-align: right;}.left{width: 70%;text-align: left;}
+            .amount{color: #002959;}
+            .button{font-family: Poppins;width:100%; height: 31px; line-height: 1;border: none; border-radius: 5px;background-image: linear-gradient(to right, #f2711d -47%, #f3ac1b 75%);color: #fff;font-size: 11px;}
+            .footer{margin-top: 10%;text-align: center;padding-bottom: 8%;}
+            .section{margin-top: 12%;color: #fff; font-size: 12px;padding-left: 20px; font-weight: 100 !important;}
+            .section p{margin: 0 auto; width: 49%;}
+            .poweredby{margin: 0;color:#fff;}
+            .note{font-size: 12px;color: rgba(0, 0, 0, 0.5);margin-top: 20px;text-align: center;}.note span{color: initial;}
+            .cancel{background-color: #fa303c;border-radius: 5px;width: 48%; height: 40px; border: none; color: #fff;}
+            .success{background-color: #4aba4c;border-radius: 5px;width: 47%; height: 40px; border: none; color: #fff;}
+        </style>
+    </head>
+    <body>
+        <div class="container-wrap">
+            <div class=inside-container>
+                <h3 class="title">Transaction Details</h3>
+                <img alt="Merchant Logo" src="" class="merchlogo" />
+                <div class="clear"></div>
+                <div class="form-wrap">
+                    <div class="deposit">
+                        <div class="left">
+                            <p class="label" style="width: 100%;">Transaction expires in : <span class="amount">00:00:59</span></p>
+                        </div>
+                        <div class="right">
+                            <button id="next" class="button">Continue Transaction Later</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="block-group">
+                        <div class="block-step">
+                            <h2 class="amount" style="padding-right: 10px;">01</h2>
+                        </div>
+                        <div class="block">
+                            <div class="blockhead">
+                                <p>STEP 01</p>
+                                <p>Transfer the exact amount to below bank account.</p>
+                            </div>
+                            <div class="blockbody">
+                                <p class="amt">Amount &nbsp; <span class="amount">4116.81 INR</span>
+                                    <img src="img/copy.png" alt="Copy" class="copy" />
+                                </p>
+                                <br>
+                                <div class="details">
+                                    <div class="label">Bank Name: &nbsp; </div>
+                                    <span class="data">RBL Bank</span>
+                                    <img src="img/copy.png" alt="Copy" />
+                                </div>
+                                <div class="details">
+                                    <div class="label">Account Holder Name: &nbsp; </div>
+                                    <span class="data">ABCDE</span>
+                                    <img src="img/copy.png" alt="Copy" />
+                                </div>
+                                <div class="details">
+                                    <div class="label">Account Number: &nbsp; </div>
+                                    <span class="data">25417859632</span>
+                                    <img src="img/copy.png" alt="Copy" />
+                                </div>
+                                <div class="details">
+                                    <div class="label">Transaction ID: &nbsp; </div>
+                                    <span class="data">021548</span>
+                                    <img src="img/copy.png" alt="Copy" />
+                                </div>
+                                <div class="details">
+                                    <div class="label">IFSC Code: &nbsp; </div>
+                                    <span class="data">RATN000036</span>
+                                    <img src="img/copy.png" alt="Copy" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="block-group">
+                        <div class="block-step">
+                            <h2 class="amount" style="padding-right: 10px;">02</h2>
+                        </div>
+                        <div class="block">
+                            <div class="blockhead">
+                                <p>STEP 02</p>
+                                <p>Attach Proof of Transfer.</p>
+                            </div>
+                            <br>
+                            <div class="blockfile">
+                                <p>Drop/upload a proof that the money has been transferred.<br>We accept files in .jpep, .png, .pdf format less than 10MB</p>    
+                                <p>- OR -</p>
+                                <form>
+                                    <input type="file" name="file" class="file" value="Browse file" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="cancel" style="margin-right: 20px;">Cancel</button><button class="success" style="float: right;">I Have Paid</button>
+                </div>
+            </div>
+            <section class="section">
+                <p>Important Notes:<br>
+                1. We only accept transfers by IMPS, NEFT & RTGS. Cash deposits are not allowed<br>
+                2. if you transfer a different amount or deposit funds to different account by mistake, we will not be responsible<br>
+                3. Adding the Transaction ID in you transfer comments is mandotory<br>
+                4. In Case of any errors, please write to support@noriapay.com<br>
+            </section>
+            <footer class="footer">
+                <h6 class="poweredby">POWERED BY</h6>
+                <img src="img/np-white.png" alt="NoriaPay" width="10%" />
+            </footer>
+        </div>
+    </body>
+</html>
